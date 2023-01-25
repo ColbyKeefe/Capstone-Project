@@ -4,7 +4,7 @@
 This is the capstone project to the Coursera IBM Data Science Professional Certificate. It encompasses everything learned in the course including Data Analysis Methodologies, Data Collection, Data Wrangling, Dash, Visualization, SQL, Python, Statistical Analysis, and Machine Learning
 
 # Data Analysis Methodologies 
-  - What ist he problem you are trying to solve?
+  - What is the problem you are trying to solve?
   - How can you use data to answer the questions 
   - What data do you need to answer the questions?
   - Where is data coming from and how will you get it?
