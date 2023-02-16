@@ -1,3 +1,146 @@
-# Capstone-Project
+# IBM Data Science Capstone Project
 
-# Testing
+# About
+This is the capstone project to the Coursera IBM Data Science Professional Certificate. It encompasses everything learned in the course including Data Analysis Methodologies, Data Collection, Data Wrangling, Dash, Visualization, SQL, Python, Statistical Analysis, and Machine Learning
+
+# Data Analysis Methodologies 
+  - What is the problem you are trying to solve?
+  - How can you use data to answer the questions 
+  - What data do you need to answer the questions?
+  - Where is data coming from and how will you get it?
+  - Is the data collection representative of the problem to be solved?
+  - What additional work is required to manipulate and work with the data?
+  - In what way can the data be visualzied to get the answer that is required?
+  - Does the model used really answer the original question?
+  - Can you put the model into practice?
+  - Can you get constructive feedback into answering the question?
+# Data Collection 
+  - Collection through rest API's
+  - Webscrapping 
+    - Beautiful Soup
+# Data Wrangling 
+  - PreProcessing: converting raw data into a managable format for further analysis
+  - Drop missing values with df.dropna()
+    - axis = 0 drops the entire row
+    - axis = 1 drops entire column 
+  - Replace missing values with df['Column Name'].replace(np.nan, new_value)
+# Data Analysis 
+  - Formatting 
+    - Normalization 
+      - Simple Featuring Scaling 
+        - df['Col-a']= df['Col-a']/df['Col-a'].max()
+        - Xnew = (Xold/Xmax)
+      - min-max
+        - df['A']=(df['A']-df['A'].min())/ (df['A'].max()-df['A'].min())
+        - Xnew = (Xold - Xmin)/(Xmax-Xmin)
+      - z-score
+        - df['A']=(df['A']-df['A'].mean())/(df['A'].std())
+        - Xnew = (Xold-mean)/Std
+     - Binning 
+     - 
+# Visualizations 
+  - Seaborn
+    - Lineplot
+    - Barplot
+    - Scatterplot 
+    - Pointplot 
+    - Countplot
+    - Boxplot
+  - Matplotlib
+    - Lineplot
+    - Barplot
+    - Scatterplot
+    - Pie Chart
+    - Histogram
+    - Boxplot
+  - Dash on plotly
+# SQL
+  - Select Statements
+    - DISTINCT
+    - * 
+    - MIN
+    - MAX
+  - From Statements 
+    - Table name, dedicates where the information will be taken from 
+  - Where Conditions 
+    - LIKE '%%' 
+    - Column_Name = ''
+  - View Statements
+    - CREATE VIEW view_name AS SELECT column1 FROM table_name WHERE ... 
+    - REPLACE VIEW 
+    - DROP VIEW view_name  
+  - Join Statements 
+     - Inner Join 
+      - Selects the rows that satisfy the join conditions on both tables 
+        - SELECT columns_1 FROM table_1 INNER JOIN table_2 
+     - Full Outer Join
+      - Joins all rows from both tables 
+     - Left Outer Join 
+      - Joins all rows from the left table and only the matching rows from the right table 
+     - Right Outer Join 
+      - Joins all rows from the right table and only the matching rows from the left table 
+  - Stored Procedures 
+    - 
+  - Transactions
+    - 
+# Statistical Analysis
+  - Alpha
+    - Significance level
+    - Probability of rejecting the null hypothesis when the null hypothesis is true, typically 5%
+    - If A > P-Value : reject the null
+    - If A < P-Value : fail to reject the null 
+  - P Value 
+    - Probability of geting a result that is as extreme or more extreme than the null hypothesis is true 
+  - T Distribution
+   - A continuous probability distribution used when you have a small sample size and don't know the population standard deviation. It is       similar to the normal distribution, but has heavier tails.
+   - t test 
+     - used when population and st deviation is not known
+     - compares sample mean to population mean when population st.dev is unknown
+   - z test 
+     - used if population and st.dev is known 
+     - comparing sample mean to population mean when population st.dev is known
+  - Normal Distribution
+   - A continuous probability distribution defined by its mean and standard deviation. It is symmetric and bell-shaped.
+  - Chi-Squared Distribution
+   - A continuous probability distribution that is used in tests of statistical significance. It is the distribution of a sum of squares of independent standard normal random variables.
+  - Z score 
+  - Correlation Test 
+    - Categorical Variables 
+     - chi-squared test 
+    - Continuous Variable 
+     - Pearson Correlation
+     - Jaccard Scores 
+       - a measure of similarity between two sets 
+       - size of the intersection of the sets divided by the size of the union of the sets
+       - used in information retrieval and natural language processing to measure the similarity between documents or text
+     - F1 Score 
+       - a measure of accuracy of a classifier 
+       - the harmonic mean of the precision and recall of the classifier
+        - Precision (Accuracy) = TP/(TP+FP)
+        - Recall (TP rate) = TP/(TP+FN)
+        - F1 Score = 2 * (Precision * Recall)/(Precision + Recall)
+# Machine Learning 
+  - Supervised Learning : training set is labeled and the model is trained to predict the output for a given input based on the examples it was trained on.
+  - Regression : Predicting continuous values 
+   - Classification : Predicting a class of item of a class 
+      - K Nearest Neighbor (KNN): is a supervised learning algorithm used for classification and regression. The goal is to predict the label of a data point based on the points nearest to it. 
+      - Decision Tree: 
+        - splits the information into different branches based of a series of decisions 
+        - the split is made by the putiry of the node, done by entropy 
+        -  entropy is a measure of randomness 
+        -  Information gain = (entropy before split) - (weighted entropy after split) 
+      - Logistic Regression: 
+         - Classification algorithm for categorical variables 
+         - Independent variables should be continuous, if categorical then make them dummy variables 
+      - Support Vector Machine:
+ - Unsupervised Learning : model is not given labeled training data 
+   - Clustering 
+     - Partitioned based clustering 
+       - Relatively effective, sphere like clusters 
+       - K-means, K-median, fuzzy c-means 
+     - Hierarchal Clustering 
+       - produces trees of clusters 
+     - Density based Clustering 
+       - Produces arbitrary shaped clusters 
+   - Associations 
+   - Dimensions Reduction 
